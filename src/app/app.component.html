@@ -1,22 +1,194 @@
 <header>
     <div class="header-wrapper">
-        <img src="/assets/image.png" alt="logo" class="logo">
+        <img src="assets/Logo.svg" alt="logo" class="logo">
         <nav class="nav">
-            <a href="#home">Home</a>
-            <a href="#home">Features</a>
-            <a href="#home">Testimonials</a>
-            <a href="#home">Pricing</a>
-            <a href="#home">FAQ</a>
+            <a href="#home">{{ 'home' | translate }}</a>
+            <a href="#features">{{ 'features' | translate }}</a>
+            <a href="#testimonials">{{ 'testimonials' | translate }}</a>
+            <a href="#faq">{{ 'faq' | translate }}</a>
         </nav>
         <div class="header-actions">
-            <select name="" id="">
-                <option value="en">English</option>
-                <option value="ru">Русский</option>
-                <option value="kk">Казахский</option>
+            <select (change)="switchLanguage($event)">
+                <option value="en">{{ 'language.english' | translate }}</option>
+                <option value="ru">{{ 'language.russian' | translate }}</option>
+                <option value="kk">{{ 'language.kazakh' | translate }}</option>
             </select>
-            <button>
-                Download
-            </button>
+            <a href="" download="assets/apk.apk">
+                {{ 'download' | translate }}
+            </a>
         </div>
     </div>
 </header>
+<main>
+    <section id="hero">
+       <div class="hero-wrapper">
+        <div class="hero-text">
+            <h1>{{ 'hero.title' | translate }} <span>{{ 'hero.app_name' | translate }}</span></h1>
+            <p>{{ 'hero.description' | translate }}</p>
+            <img class="arrow" src="assets/arrow.svg" alt="arrow">
+            <div class="hero-btn">
+                <a href="" download="assets/apk.apk">{{ 'download' | translate }} <img class="down" src="assets/down.svg" alt="down"></a>
+                <a (click)="toggleVideo()"><img src="assets/play.svg" alt="play">{{ 'video' | translate }}</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="assets/hero-frame.png" alt="herogirl">
+        </div>
+       </div>
+    </section>
+    <div *ngIf="showVideo" class="modal-overlay" (click)="hideVideo()">
+        <div class="modal-content" (click)="$event.stopPropagation()">
+            <button class="close-btn" (click)="hideVideo()">×</button>
+            <video autoplay width="900" controls (ended)="hideVideo()">
+                <source src="assets/twin-video.mp4" type="video/mp4">
+                {{ 'video.not_supported' | translate }}
+            </video>
+        </div>
+    </div>
+    <section id="features">
+        <div class="features-wrapper">
+            <div class="section-one">
+                <img src="assets/section-1-img.svg" alt="section-1-img">
+                <div class="text-wrapper">
+                    <span>{{ 'features.section1.tagline' | translate }}</span>
+                    <h2>{{ 'features.section1.title' | translate }}</h2>
+                    <p>{{ 'features.section1.description' | translate }}</p>
+                </div>
+            </div>
+            <div class="section-two">
+                <img src="assets/section-2-img.svg" alt="section-2-img">
+                <div class="text-wrapper">
+                    <span>{{ 'features.section2.tagline' | translate }}</span>
+                    <h2>{{ 'features.section2.title' | translate }}</h2>
+                    <p>{{ 'features.section2.description' | translate }}</p>
+                </div>
+            </div>
+            <div class="section-three">
+                <img src="assets/section-3-img.svg" alt="section-3-img">
+                <div class="text-wrapper">
+                    <span>{{ 'features.section3.tagline' | translate }}</span>
+                    <h2>{{ 'features.section3.title' | translate }}</h2>
+                    <p>{{ 'features.section3.description' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section id="testimonials">
+    <div class="testimonials-wrapper">
+        <span>{{ 'testimonials.title' | translate }}</span>
+        <h2>{{ 'testimonials.subtitle' | translate }}</h2>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="assets/quote.svg" alt="quote">
+                <p>{{ 'testimonials.card1.text' | translate }}</p>
+                <img src="assets/quote.svg" alt="quote">
+            </div>
+            <div class="card">
+                <img src="assets/quote.svg" alt="quote">
+                <p>{{ 'testimonials.card2.text' | translate }}</p>
+                <img src="assets/quote.svg" alt="quote">
+            </div>
+            <div class="card">
+                <img src="assets/quote.svg" alt="quote">
+                <p>{{ 'testimonials.card3.text' | translate }}</p>
+                <img src="assets/quote.svg" alt="quote">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section id="faq">
+    <p>{{ 'faq.title' | translate }}</p>
+    <h2>{{ 'faq.subtitle' | translate }}</h2>
+    <div class="faq-wrapper">
+        <div class="faq-card">
+            <img src="assets/que.svg" alt="question-icon">
+            <div class="text-wrapper">
+                <h3>{{ 'faq.card1.question' | translate }}</h3>
+                <p>{{ 'faq.card1.answer' | translate }}</p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <img src="assets/que.svg" alt="question-icon">
+            <div class="text-wrapper">
+                <h3>{{ 'faq.card2.question' | translate }}</h3>
+                <p>{{ 'faq.card2.answer' | translate }}</p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <img src="assets/que.svg" alt="question-icon">
+            <div class="text-wrapper">
+                <h3>{{ 'faq.card3.question' | translate }}</h3>
+                <p>{{ 'faq.card3.answer' | translate }}</p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <img src="assets/que.svg" alt="question-icon">
+            <div class="text-wrapper">
+                <h3>{{ 'faq.card4.question' | translate }}</h3>
+                <p>{{ 'faq.card4.answer' | translate }}</p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <img src="assets/que.svg" alt="question-icon">
+            <div class="text-wrapper">
+                <h3>{{ 'faq.card5.question' | translate }}</h3>
+                <p>{{ 'faq.card5.answer' | translate }}</p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <img src="assets/que.svg" alt="question-icon">
+            <div class="text-wrapper">
+                <h3>{{ 'faq.card6.question' | translate }}</h3>
+                <p>{{ 'faq.card6.answer' | translate }}</p>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section id="cta">
+    <div class="cta-wrapper">
+        <div class="cta-card">
+            <h2>{{ 'cta.title' | translate }}</h2>
+            <a href="" download="assets/apk.apk">{{ 'download' | translate }} <img class="down" src="assets/down.svg" alt="down"></a>
+        </div>
+    </div>
+   </section>
+</main>
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-main">
+            <img src="assets/main.svg" alt="main">
+            <h4>{{ 'footer.app_name' | translate }}</h4>
+            <p>{{ 'footer.copyright' | translate }}</p>
+        </div>
+        <div class="footer-column">
+            <p>{{ 'footer.product' | translate }}</p>
+            <a href="">{{ 'footer.product.autocapture' | translate }}</a>
+            <a href="">{{ 'footer.product.data_governance' | translate }}</a>
+            <a href="">{{ 'footer.product.virtual_events' | translate }}</a>
+            <a href="">{{ 'footer.product.virtual_users' | translate }}</a>
+            <a href="">{{ 'footer.product.behavioral_analytics' | translate }}</a>
+        </div>
+        <div class="footer-column">
+            <p>{{ 'footer.explore' | translate }}</p>
+            <a href="">{{ 'footer.explore.resources' | translate }}</a>
+            <a href="">{{ 'footer.explore.blog' | translate }}</a>
+            <a href="">{{ 'footer.explore.documents' | translate }}</a>
+        </div>
+        <div class="footer-column">
+            <p>{{ 'footer.community' | translate }}</p>
+            <a href="">{{ 'footer.community.central' | translate }}</a>
+            <a href="">{{ 'footer.community.support' | translate }}</a>
+            <a href="">{{ 'footer.community.virtual_events' | translate }}</a>
+            <a href="">{{ 'footer.community.help' | translate }}</a>
+            <a href="">{{ 'footer.community.my_info' | translate }}</a>
+        </div>
+        <div class="footer-column">
+            <p>{{ 'footer.company' | translate }}</p>
+            <a href="">{{ 'footer.company.about_us' | translate }}</a>
+            <a href="">{{ 'footer.company.partners' | translate }}</a>
+            <a href="">{{ 'footer.company.customers' | translate }}</a>
+            <a href="">{{ 'footer.company.virtual_users' | translate }}</a>
+            <a href="">{{ 'footer.company.contact_us' | translate }}</a>
+        </div>
+    </div>
+</footer>
