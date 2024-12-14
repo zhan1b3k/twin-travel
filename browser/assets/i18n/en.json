@@ -1,0 +1,91 @@
+{
+    "home": "Home",
+    "features": "Features",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "language": {
+      "english": "English",
+      "russian": "Russian",
+      "kazakh": "Kazakh"
+    },
+    "download": "Download",
+    "hero": {
+      "title": "Together the journey is more fun! Especially with",
+      "app_name": "Twin Travel",
+      "description": "We offer Twin Travel - a unique application that connects conventional navigation, travel tips, and new acquaintances!"
+    },
+    "video": "Video",
+    "video.not_supported": "Your browser does not support the video tag.",
+    "features.section1": {
+      "tagline": "Only bright events!",
+      "title": "Find interesting things",
+      "description": "Find out about all the events in your city - concerts, exhibitions, parties, and much more. Filter events by interests and location so you don't miss anything."
+    },
+    "features.section2": {
+      "tagline": "Coming soon",
+      "title": "Fast and convenient currency exchange",
+      "description": "Easily check the latest exchange rates and locate the nearest exchange offices for your convenience."
+    },
+    "features.section3": {
+      "tagline": "Find travel companions",
+      "title": "Messenger right here",
+      "description": "Find travel companions who share your interests and make every trip unforgettable. Whether you're looking for adventure, relaxation, or cultural exploration, connect with like-minded individuals to create memorable experiences together."
+    },
+    "testimonials.title": "What our community is saying",
+    "testimonials.subtitle": "See why travelers love Twin Travel",
+    "testimonials.card1.text": "Twin Travel is just a find! Thanks to the application, I found so many interesting events that I didn’t even know about before. It’s also very convenient to keep track of exchange rates while traveling.",
+    "testimonials.card2.text": "Twin Travel is incredibly helpful! I planned my trip seamlessly and discovered unique places I wouldn't have known otherwise. The app made everything easier.",
+    "testimonials.card3.text": "Amazing app! I managed to organize my travels efficiently and saved a lot of time. The exchange rate tracker is a game-changer!",
+    "faq.title": "Frequently Asked Questions",
+    "faq.subtitle": "Find answers to common questions",
+    "faq.card1": {
+      "question": "What is Twin Travel?",
+      "answer": "Twin Travel is a mobile app that helps you discover events around you, plan your routes, and exchange currency with ease."
+    },
+    "faq.card2": {
+      "question": "How do I create an account on Twin Travel?",
+      "answer": "You can create an account by downloading the app, selecting 'Sign Up,' and entering your email address and password."
+    },
+    "faq.card3": {
+      "question": "Is Twin Travel available in multiple languages?",
+      "answer": "Yes, Twin Travel supports several languages to ensure ease of use for travelers worldwide."
+    },
+    "faq.card4": {
+      "question": "Can I track my expenses using Twin Travel?",
+      "answer": "Absolutely! Twin Travel includes a built-in feature to manage and monitor your travel expenses."
+    },
+    "faq.card5": {
+      "question": "How does Twin Travel help with currency exchange?",
+      "answer": "Twin Travel provides real-time currency exchange rates and helps you locate the nearest exchange services."
+    },
+    "faq.card6": {
+      "question": "Does Twin Travel work offline?",
+      "answer": "Some features, like saved routes and downloaded event information, can be accessed offline."
+    },
+    "cta.title": "Ready for adventure? Download Twin Travel!",
+    "footer.app_name": "Twin Travel",
+    "footer.copyright": "© 2024 ABC. All rights reserved.",
+    "footer.product": "Product",
+    "footer.product.autocapture": "Autocapture",
+    "footer.product.data_governance": "Data Governance",
+    "footer.product.virtual_events": "Virtual Events",
+    "footer.product.virtual_users": "Virtual Users",
+    "footer.product.behavioral_analytics": "Behavioral Analytics",
+    "footer.explore": "Explore",
+    "footer.explore.resources": "Resources",
+    "footer.explore.blog": "Blog",
+    "footer.explore.documents": "Documents",
+    "footer.community": "Community",
+    "footer.community.central": "Community Central",
+    "footer.community.support": "Support",
+    "footer.community.virtual_events": "Virtual Events",
+    "footer.community.help": "Help",
+    "footer.community.my_info": "My info",
+    "footer.company": "Company",
+    "footer.company.about_us": "About us",
+    "footer.company.partners": "Partners",
+    "footer.company.customers": "Customers",
+    "footer.company.virtual_users": "Virtual Users",
+    "footer.company.contact_us": "Contact us"
+  }
+  
